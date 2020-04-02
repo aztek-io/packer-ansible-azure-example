@@ -5,7 +5,7 @@ source "azure-arm" "cassandra" {
   tenant_id                 = var.tenant_id
 
   storage_account           = var.storage_account
-  resource_group_name     = var.resource_group_name
+  resource_group_name       = var.resource_group_name
 
   capture_container_name    = var.capture_container_name
   capture_name_prefix       = var.capture_name_prefix
