@@ -1,0 +1,10 @@
+- name: This is an example role
+  template:
+    src: item.example.j2
+    dest: "{{ item }}"
+  become: true
+  loop:
+  - /demo
+  - /another_example
+  when: ansible_os_family == "Debian"
+
