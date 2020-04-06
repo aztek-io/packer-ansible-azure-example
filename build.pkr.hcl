@@ -3,7 +3,7 @@ build {
     "source.azure-arm.cassandra"
   ]
 
-  provisioner "shell" {
-    inline = ["sleep 5"]
+  provisioner "ansible" {
+    playbook_file = "./ansible/playbook.yml"
   }
 }
