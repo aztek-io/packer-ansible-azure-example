@@ -1,0 +1,20 @@
+- name: Install ntp
+  apt:
+    name: ntp
+    state: latest
+  become: true
+  when: ansible_os_family == "Debian"
+
+- name: Configure ntp
+  template:
+    src: ntp.conf.j2
+    dest: /etc/ntp.conf
+    owner: root
+    group: root
+  become: true
+
+- name: Restart ntp service
+  service:
+    name: ntp
+    state: restarted
+  become: true
