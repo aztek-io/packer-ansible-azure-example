@@ -32,3 +32,13 @@ Please remember to merge origin/master to your local feature branch before putti
 ``` bash
 git pull origin master
 ```
+
+## Local testing
+
+```
+docker build -t ubuntu-ansible:latest .
+```
+
+```
+docker run -it -v "$PWD:/home/ansible" ubuntu-ansible:latest
+```
