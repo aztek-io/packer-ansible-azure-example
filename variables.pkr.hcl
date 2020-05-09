@@ -7,11 +7,11 @@ variable "image_offer" {
 }
 
 variable "image_sku" {
-  default = "18.04-LTS"
+  default = "20.04-LTS"
 }
 
 variable "custom_managed_image_name" {
-  default = "Cassandra"
+  default = "Example"
 }
 
 variable "capture_container_name" {
@@ -19,7 +19,7 @@ variable "capture_container_name" {
 }
 
 variable "capture_name_prefix" {
-  default = "cassandra"
+  default = "example"
 }
 
 variable "os_type" {

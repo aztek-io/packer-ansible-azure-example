@@ -1,6 +1,6 @@
 build {
   sources = [
-    "source.azure-arm.cassandra"
+    "source.azure-arm.this"
   ]
 
   provisioner "ansible" {
